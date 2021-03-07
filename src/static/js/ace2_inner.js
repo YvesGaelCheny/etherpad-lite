@@ -589,11 +589,11 @@ function Ace2Inner(editorInfo) {
 
     idleWorkTimer.atMost(100);
 
-    if (rep.alltext !== atext.text) {
-      dmesg(htmlPrettyEscape(rep.alltext));
-      dmesg(htmlPrettyEscape(atext.text));
-      throw new Error('mismatch error setting raw text in setDocAText');
-    }
+    // if (rep.alltext !== atext.text) {
+    //   dmesg(htmlPrettyEscape(rep.alltext));
+    //   dmesg(htmlPrettyEscape(atext.text));
+    //   throw new Error('mismatch error setting raw text in setDocAText');
+    // }
   };
 
   const setDocText = (text) => {
