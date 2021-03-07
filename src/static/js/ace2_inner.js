@@ -196,7 +196,7 @@ function Ace2Inner(editorInfo) {
       window.console.log(atext);
 
       /// "*0+9|1+1"
-      let testTmp = "$(atext.text)\n\b";
+      let testTmp = "$(atext.text)\n\n";
       window.console.log(testTmp);
       window.console.log(testTmp.length);
 
