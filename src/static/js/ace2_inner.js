@@ -200,7 +200,8 @@ function Ace2Inner(editorInfo) {
       window.console.log(testTmp);
       window.console.log(testTmp.length);
       atext.text = testTmp;
-      atext.attribs = "*0+"+testTmp.length+"|1+1";
+      len=testTmp.length-1;
+      atext.attribs = "*0+"+len+"|1+1";
       window.console.log(atext);
       setDocAText(atext);
     }
