@@ -196,9 +196,14 @@ function Ace2Inner(editorInfo) {
       window.console.log(atext);
 
       /// "*0+9|1+1"
-      atext.text = atext.text+'\n\n';
+      testTmp = "$(atext.text)\n\b";
+      windows.console.log(testTmp);
+      windows.console.log(testTmp.length);
+
+     // atext.text = atext.text+'\n\n';
   //    atext.attribs = '*x|2+5';
-      atext.attribs = "*0+"+atext.text.lenght+"|1+1";
+      atext.text = testTmp;
+      atext.attribs = "*0+"+testTmp.length+"|1+1";
       setDocAText(atext);
     }
   };
