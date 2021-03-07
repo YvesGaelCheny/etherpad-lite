@@ -576,6 +576,7 @@ function Ace2Inner(editorInfo) {
     assem.append(o);
     Changeset.appendATextToAssembler(atext, assem);
     const newLen = oldLen + assem.getLengthChange();
+    atext.text=atext.text.toString();
     const changeset = Changeset.checkRep(
         Changeset.pack(oldLen, newLen, assem.toString(), atext.text.slice(0, -1)));
     performDocumentApplyChangeset(changeset);
