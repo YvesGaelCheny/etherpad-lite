@@ -194,8 +194,8 @@ function Ace2Inner(editorInfo) {
     } catch ( error) {
       window.console.log(error);
       window.console.log(atext);
-      atext.attribs="";
-      atext.text=atext.text;
+
+      atext.text="plopplop";
       setDocAText(atext);
     }
   };
