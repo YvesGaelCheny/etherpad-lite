@@ -189,11 +189,14 @@ function Ace2Inner(editorInfo) {
 
   const setWithTry = (atext) => {
     try {
-           setDocAText(atext);
-                     window.console.log(atext);
+      setDocAText(atext);
+      window.console.log(atext);
     } catch ( error) {
-                 window.console.log(error);
-                 window.console.log(atext);
+      window.console.log(error);
+      window.console.log(atext);
+      atext.attribs="";
+      atext.text=atext.text;
+      setDocAText(atext);
     }
   };
 
