@@ -195,7 +195,7 @@ function Ace2Inner(editorInfo) {
       window.console.log(error);
       window.console.log(atext);
 
-      atext.text = '\nfoo\n';
+      atext.text = '\n$(atext.text)\n';
       atext.attribs = '*x|2+5';
       setDocAText(atext);
     }
