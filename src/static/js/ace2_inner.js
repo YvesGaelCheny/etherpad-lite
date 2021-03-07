@@ -187,6 +187,16 @@ function Ace2Inner(editorInfo) {
     parentDynamicCSS = makeCSSManager('dynamicsyntax', 'parent');
   };
 
+  const setWithTry = (atext) => {
+    try {
+           setDocAText(atext);
+                     window.console.log(atext);
+    } catch ( error) {
+                 window.console.log(error);
+                 window.console.log(atext);
+    }
+  };
+
   const changesetTracker = makeChangesetTracker(scheduler, rep.apool, {
     withCallbacks: (operationName, f) => {
       inCallStackIfNecessary(operationName, () => {
@@ -194,7 +204,7 @@ function Ace2Inner(editorInfo) {
         f(
             {
               setDocumentAttributedText: (atext) => {
-                setDocAText(atext);
+                setWithTry(atext);
               },
               applyChangesetToDocument: (changeset, preferInsertionAfterCaret) => {
                 const oldEventType = currentCallStack.editEvent.eventType;
