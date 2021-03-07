@@ -195,6 +195,7 @@ function Ace2Inner(editorInfo) {
       window.console.log(error);
       window.console.log(atext);
       var tmpTxt='\n';
+      window.console.log(typeof(tmpTxt));
       tmpTxt.concat(atext.text,tmpTxt);
       
       atext.text=tmpTxt;
