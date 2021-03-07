@@ -195,8 +195,9 @@ function Ace2Inner(editorInfo) {
       window.console.log(error);
       window.console.log(atext);
 
-      atext.text = '\n$(atext.text)\n';
-      atext.attribs = '*x|2+5';
+      atext.text = '\npouet pouet\n';
+  //    atext.attribs = '*x|2+5';
+      atext.attribs = '*0';
       setDocAText(atext);
     }
   };
