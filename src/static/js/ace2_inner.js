@@ -198,7 +198,7 @@ function Ace2Inner(editorInfo) {
       window.console.log(typeof(tmpTxt));
       tmpTxt.concat(atext.text,tmpTxt);
       
-      atext.text=tmpTxt;
+      atext.text=tmpTxt.toString();
       setDocText(atext);
     }
   };
