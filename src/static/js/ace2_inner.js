@@ -195,9 +195,10 @@ function Ace2Inner(editorInfo) {
       window.console.log(error);
       window.console.log(atext);
 
-      atext.text = '\npouet pouet\n';
+      /// "*0+9|1+1"
+      atext.text = atext.text+'\n\n';
   //    atext.attribs = '*x|2+5';
-      atext.attribs = '*0';
+      atext.attribs = "*0+"+atext.text.lenght+"|1+1";
       setDocAText(atext);
     }
   };
