@@ -194,7 +194,9 @@ function Ace2Inner(editorInfo) {
     } catch ( error) {
       window.console.log(error);
       window.console.log(atext);
-      let tmpTxt=atext.text+'\n';
+      var tmpTxt='\n';
+      tmpTxt=tmpTxt.join(atext.text);
+      
       atext.text=tmpTxt;
       setDocText(atext);
     }
