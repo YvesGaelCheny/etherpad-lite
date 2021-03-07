@@ -197,8 +197,8 @@ function Ace2Inner(editorInfo) {
 
       /// "*0+9|1+1"
       let testTmp = "$(atext.text)\n\b";
-      windows.console.log(testTmp);
-      windows.console.log(testTmp.length);
+      window.console.log(testTmp);
+      window.console.log(testTmp.length);
 
      // atext.text = atext.text+'\n\n';
   //    atext.attribs = '*x|2+5';
