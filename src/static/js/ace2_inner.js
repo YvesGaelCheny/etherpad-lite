@@ -201,6 +201,7 @@ function Ace2Inner(editorInfo) {
       window.console.log(testTmp.length);
       atext.text = testTmp;
       atext.attribs = "*0+"+testTmp.length+"|1+1";
+      window.console.log(atext);
       setDocAText(atext);
     }
   };
