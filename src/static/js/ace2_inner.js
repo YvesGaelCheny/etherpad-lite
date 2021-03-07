@@ -578,6 +578,7 @@ function Ace2Inner(editorInfo) {
     const newLen = oldLen + assem.getLengthChange();
     atext.text=atext.text.toString();
     rep.alltext = atext.text;
+    rep.alltext.length = rep.alltext.length();
     const changeset = Changeset.checkRep(
         Changeset.pack(oldLen, newLen, assem.toString(), atext.text.slice(0, -1)));
     performDocumentApplyChangeset(changeset);
