@@ -332,6 +332,7 @@ exports.smartOpAssembler = () => {
   const appendOpWithText = (opcode, text, attribs, pool) => {
     const op = exports.newOp(opcode);
     op.attribs = exports.makeAttribsString(opcode, attribs, pool);
+    text=text.toString();
     const lastNewlinePos = text.lastIndexOf('\n');
     if (lastNewlinePos < 0) {
       op.chars = text.length;
