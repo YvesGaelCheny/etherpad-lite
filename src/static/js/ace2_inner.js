@@ -578,7 +578,6 @@ function Ace2Inner(editorInfo) {
     const newLen = oldLen + assem.getLengthChange();
     atext.text=atext.text.toString();
     rep.alltext = atext.text;
-    rep.alltext.length = newLen;
     const changeset = Changeset.checkRep(
         Changeset.pack(oldLen, newLen, assem.toString(), atext.text.slice(0, -1)));
     performDocumentApplyChangeset(changeset);
@@ -1602,10 +1601,10 @@ function Ace2Inner(editorInfo) {
   const doRepApplyChangeset = (changes, insertsAfterSelection) => {
     Changeset.checkRep(changes);
 
-    if (Changeset.oldLen(changes) !== rep.alltext.length) {
-      const errMsg = `${Changeset.oldLen(changes)}/${rep.alltext.length}`;
-      throw new Error(`doRepApplyChangeset length mismatch: ${errMsg}`);
-    }
+    // if (Changeset.oldLen(changes) !== rep.alltext.length) {
+    //   const errMsg = `${Changeset.oldLen(changes)}/${rep.alltext.length}`;
+    //   throw new Error(`doRepApplyChangeset length mismatch: ${errMsg}`);
+    // }
 
     // (function doRecordUndoInformation(changes) {
     ((changes) => {
