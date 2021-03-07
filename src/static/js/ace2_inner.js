@@ -202,9 +202,9 @@ function Ace2Inner(editorInfo) {
 
      // atext.text = atext.text+'\n\n';
   //    atext.attribs = '*x|2+5';
-      atext.text = testTmp;
-      atext.attribs = "*0+"+testTmp.length+"|1+1";
-      setDocAText(atext);
+    //  atext.text = testTmp;
+   //   atext.attribs = "*0+"+testTmp.length+"|1+1";
+    //  setDocAText(atext);
     }
   };
 
